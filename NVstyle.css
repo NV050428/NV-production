@@ -1,0 +1,107 @@
+h1 { /* on sélectionne le body qui a pour id accueil*/
+    font-family: Arial; /* police du texte */
+    font-size: 50pt; /* taille du texte*/
+    text-align: center; /* centre le texte */
+}
+
+h2 {
+	font-family: Arial; /* police du texte */
+    font-size: 20pt; /* taille du texte*/
+    text-align: center; /* centre le texte */
+	font-weight: lighter;
+}
+h3 {
+	font-family: cursive;
+}
+.movie { /* pour l'accueil */
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 20px 0;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  color: black;             /* texte en noir */
+  text-decoration: none;    /* enlève le soulignement */
+  cursor: pointer;          /* main au survol */
+}
+
+.movie:hover { /* pour l'accueil */
+  background-color: #f0f0f0;
+}
+
+.movie img { /* pour image de accueil */
+  width: 400px;
+  height: auto;
+}
+
+.movie p { /* pour l'accueil */
+	font-family: system-ui;
+	margin: 0;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+
+li {
+  list-style: none;
+  padding: 0; /* Optionnel mais utile pour supprimer l'indentation par défaut */
+  margin: 0;  /* Idem */
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;	
+}
+
+.btn-retour { /* pour le bouton de retour */
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 30px auto;
+  background-color: #007BFF;  /* bleu */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-retour:hover { /* pour le bouton de retour */
+  background-color: #0056b3;
+}
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px; 
+      flex-wrap: wrap; 
+      margin-bottom: 30px;
+    }
+
+    .video-container iframe {
+      width: 480px;   /* Largeur de chaque vidéo */
+      height: 270px;  /* Hauteur */
+      border-radius: 10px;
+      border: none;
+    }
+
+    img {
+      width: 250px;   
+      height: auto;  
+      border-radius: 10px; 
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+	
+	.video-box {
+	  display: flex;
+	  flex-direction: column; /* Titre au-dessus de la vidéo */
+	  align-items: center;    /* Centre le contenu */
+	}
