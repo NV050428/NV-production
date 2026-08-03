@@ -105,3 +105,22 @@ li {
 	  flex-direction: column; /* Titre au-dessus de la vidéo */
 	  align-items: center;    /* Centre le contenu */
 	}
+
+/* Style du conteneur en-tête */
+.header-principal {
+    display: flex;
+    align-items: center; /* Aligne verticalement le logo et le titre au même niveau */
+    gap: 20px; /* Espace entre le logo et le titre */
+    margin-bottom: 20px;
+}
+
+/* Taille du logo (à ajuster selon vos préférences) */
+.logo-site {
+    height: 60px; /* Ajustez la hauteur selon vos besoins (ex: 50px, 80px) */
+    width: auto;  /* Conserve les proportions de l'image */
+}
+
+/* Supprime les marges par défaut du h1 pour un alignement parfait */
+.titre-site {
+    margin: 0;
+}
